@@ -10,9 +10,17 @@ public:
 	//
 	int capacity;
 	int size;
+	ELEMENT *H;
 
 	//Functions
-	HEAP(int c, int s);
+	HEAP(int c);
+	HEAP Initialize(int n);
+	void BuildHeap(HEAP heap, ELEMENT *A);
+	void Insert(HEAP heap, int k);
+	void DeleteMin(HEAP heap);
+	void DecreaseKey(HEAP heap, ELEMENT element, int value);
+	void printHeap(HEAP heap);
+
 
 
 };

@@ -12,12 +12,17 @@ using namespace std;
 
 int main()
 {
+	/* Testing 
 	ELEMENT i = ELEMENT(11);
 	cout << i.key << endl;
 
-	HEAP t = HEAP(4,8);
+	HEAP t = HEAP(4);
 
-	cout << t.size << endl;
+	cout << t.capacity << endl;
+	*/
+
+	//Parse whatever is entered in for particular commands.  If not a command, ask again.  Include ? for funsies
+
 
 	system("pause");
     return 0;
