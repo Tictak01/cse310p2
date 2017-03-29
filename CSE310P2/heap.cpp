@@ -1,14 +1,10 @@
 #include "stdafx.h"
-#include "element.cpp"
+//#include "element.h"
 
-class HEAP
-{
-public:
-	int capacity;
-	int size;
+
 
 	//Constructor
-	HEAP(int c, int s)
+	HEAP::HEAP(int c, int s)
 	{
 		capacity = c;
 		size = s;
@@ -18,4 +14,3 @@ public:
 	}
 
 
-};

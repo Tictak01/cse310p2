@@ -9,6 +9,9 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include "element.h"
+#include "heap.h"
+#include "util.h"
 
 
 

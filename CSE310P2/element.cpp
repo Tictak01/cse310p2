@@ -1,23 +1,18 @@
 #include "stdafx.h"
-
-class ELEMENT
-{
-	
+//#include "element.h"
+#include <cstdlib>
 
 
-public:
-	int key;
 
-	//Constructor
-	ELEMENT(int item)
+	//Constructors
+	ELEMENT::ELEMENT(int item)
 	{
 		key = item;
 	}
 
 	//Needs an empty declaration for ELEMENT arrays
-	ELEMENT()
+	ELEMENT::ELEMENT()
 	{
 
 	}
 
-};
