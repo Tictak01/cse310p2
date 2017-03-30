@@ -7,16 +7,21 @@
 class HEAP
 {
 public:
+
+	struct heaper
+	{
+		int capacity;
+		int size;
+		ELEMENT *H; //= new ELEMENT[capacity];
+	};
+
 	//
-	int capacity;
-	int size;
-	ELEMENT *H;
+	heaper *heapy = new heaper;
 
 	//Functions
-	HEAP(int c);
 	HEAP();
 	HEAP Initialize(int n);
-	void BuildHeap(HEAP heap, ELEMENT A[]);
+	void BuildHeap(HEAP heap, ELEMENT *A);
 	void Insert(HEAP heap, int k);
 	void DeleteMin(HEAP heap);
 	void DecreaseKey(HEAP heap, ELEMENT element, int value);

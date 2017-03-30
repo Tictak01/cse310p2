@@ -6,15 +6,6 @@ using namespace std;
 
 
 	//Constructor
-	HEAP::HEAP(int c)
-	{
-		capacity = c;
-		//size = s;
-		
-
-		H = new ELEMENT[capacity];
-	}
-
 	HEAP::HEAP()
 	{
 
@@ -22,27 +13,36 @@ using namespace std;
 
 	HEAP HEAP::Initialize(int n)
 	{
+		
 		//Could do this more explicitly
-		HEAP heap(n);
-		heap.size = 0;
+		HEAP heap;
+		//heaper *heapy = new heaper;
+		//ELEMENT *j = new ELEMENT[n];
+		heap.heapy->capacity = n;
+		heap.heapy->H = new ELEMENT[n];
+		heap.heapy->size = 0;
 
-		return heap;
+		//cout << heap.heapy->size << endl;
+
+		return heap; //Whatever, it works.  Get to the other noise.
 
 	}
-	void HEAP::BuildHeap(HEAP heap, ELEMENT A[])
+	void HEAP::BuildHeap(HEAP heap, ELEMENT *A)
 	{
-		//Find size of A
+		//I'm very dumb
+		int size = heap.heapy->size;
 		int i = 0;
-		cout << sizeof(A) << endl;
-		cout << sizeof(*A) << endl;
-		cout << "Length of array = " << (sizeof(A) / sizeof(*A)) << endl;
 
+		//Work your magic in the morning
 		
 
-		//
+
+
 	}
 	void HEAP::Insert(HEAP heap, int k)
 	{
+
+
 
 	}
 	void HEAP::DeleteMin(HEAP heap)

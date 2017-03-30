@@ -17,12 +17,10 @@ int main()
 	cout << i.key << endl;
 	*/
 	HEAP t = HEAP();
-	
-	t.Initialize(110);
-	ELEMENT r[22];
-	t.BuildHeap(t, r);
 
-	cout << t.capacity << endl;
+	HEAP A = t.Initialize(54);
+
+	cout << A.heapy->size << endl;
 	
 
 	//Parse whatever is entered in for particular commands.  If not a command, ask again.  Include ? for funsies
