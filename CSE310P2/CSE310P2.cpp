@@ -15,11 +15,15 @@ int main()
 	/* Testing 
 	ELEMENT i = ELEMENT(11);
 	cout << i.key << endl;
-
-	HEAP t = HEAP(4);
+	*/
+	HEAP t = HEAP();
+	
+	t.Initialize(110);
+	ELEMENT r[22];
+	t.BuildHeap(t, r);
 
 	cout << t.capacity << endl;
-	*/
+	
 
 	//Parse whatever is entered in for particular commands.  If not a command, ask again.  Include ? for funsies
 
